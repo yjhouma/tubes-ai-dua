@@ -46,7 +46,7 @@ def process():
         #         'relationship','race', 'sex', 'native_country', 'income']:
         #     df[value].replace(['?'], [df.describe(include='all')[value][2]],inplace=True)
 
-        # Labelling data
+        # # Labelling data
         from sklearn import preprocessing
         from sklearn.preprocessing import OneHotEncoder
 
