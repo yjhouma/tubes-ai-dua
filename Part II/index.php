@@ -12,7 +12,7 @@
 
 <div class="container">
   <h2>Input Data AI</h2>
-  <form class="form-horizontal" action="/action_page.php">
+  <form class="form-horizontal" action="/process" method ="POST">
     <div class="form-group">
       <label class="control-label col-sm-2" for="age">Age:</label>
       <div class="col-sm-10">
