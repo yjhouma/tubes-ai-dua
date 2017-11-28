@@ -8,19 +8,19 @@ def index():
 @app.route('/process', methods=['GET', 'POST'])
 def process():
     if request.method == 'POST':
-        age = int(request.form['age'])
+        age = request.form['age']
         workclass = request.form['workclass']
-        fnlwgt = int(request.form['fnlwgt'])
+        fnlwgt = request.form['fnlwgt']
         education = request.form['education']
-        education_num = int(request.form['education_num'])
+        education_num = request.form['education_num']
         marital_status = request.form['marital_status']
         occupation = request.form['occupation']
         relationship = request.form['relationship']
         race = request.form['race']
         gender = request.form['gender']
-        capital_gain = int(request.form['capital_gain'])
-        capital_loss = int(request.form['capital_loss'])
-        hours_per_week = int(request.form['hours_per_week'])
+        capital_gain = request.form['capital_gain']
+        capital_loss = request.form['capital_loss']
+        hours_per_week = request.form['hours_per_week']
         native_country = request.form['native_country']
 
         features = [('age', [age]),
